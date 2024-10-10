@@ -1,0 +1,15 @@
+var fs = require('fs');
+var os = require('os');  //here we want to use os and fs package so here we are importing here
+
+var user = os.userInfo();
+console.log(user); //THIS GIVES THE SYSTEM INFO
+console.log(user.username); // THIS GIVES THE USER INFO
+
+//Now hum ek greeting message likhengein user ko [TO VO "fs" KI HELP SE LIKH PAAYEGEIN]
+fs.appendFile('greeting.txt' , 'Hi ' + user.username + '!',() =>{
+    console.log('file is created');
+});
+
+
+console.log(fs); //This will print all the functionality which fs can do
+console.log(os); //This will print all the functionality which os can do

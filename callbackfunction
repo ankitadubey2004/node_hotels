@@ -1,0 +1,11 @@
+const add = function(a,b,callback){
+    var result = a+b;
+    console.log('result: '+result); //MAIN FUNCTION COMPLETE
+    callback();  //HERE WE ARE CALLING A FUNCTION
+}
+
+// add(2,3,function(){
+//     console.log('add completed');
+// });
+
+add(2,3,() => console.log('add completed'));

@@ -1,2 +1,1 @@
-es);  
-
+require('dotenv').config();
